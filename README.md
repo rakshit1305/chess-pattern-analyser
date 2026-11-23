@@ -1,4 +1,4 @@
-# ♟️ Chess Win Pattern Analyzer v2
+# ♟️ Chess Win Pattern Analyzer 
 
 Predict chess game outcomes (white win / draw / black win) from everything knowable after move 10: ratings, opening, time control,
 the board (material, development, pawn structure, king safety, mobility ...), **engine evaluation**, **clock usage** and **player history**.
