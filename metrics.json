@@ -1,0 +1,298 @@
+{
+  "version": 2,
+  "preset": "quick",
+  "dataset": "Lichess 2013-2026 (months [1, 7]) + OTB championships via Lichess broadcasts",
+  "eval_source": "Stockfish depth 8 (80,609 positions)",
+  "n_games": 79661,
+  "n_train": 67623,
+  "n_test": 12038,
+  "test_from": "2025-01-01",
+  "date_range": [
+    "2012-12-31",
+    "2026-11-20"
+  ],
+  "games_by_source": {
+    "lichess": 69953,
+    "otb": 9708
+  },
+  "n_players": 93972,
+  "n_events": 291,
+  "classes": [
+    "black",
+    "draw",
+    "white"
+  ],
+  "best_model": "XGBoost (tuned)",
+  "best_params": {
+    "subsample": 0.8,
+    "reg_lambda": 0.5,
+    "n_estimators": 400,
+    "min_child_weight": 10,
+    "max_depth": 5,
+    "learning_rate": 0.03,
+    "gamma": 0.5,
+    "colsample_bytree": 0.5
+  },
+  "balanced_weights": false,
+  "cv_best": {
+    "accuracy": 0.6196507312994234,
+    "accuracy_std": 0.01250863926096574,
+    "balanced_acc": 0.48360636583389277,
+    "f1_macro": 0.49477413591386565,
+    "log_loss": 0.7710760538480428,
+    "log_loss_std": 0.01383943004348815,
+    "fit_sec": 42.242044067382814
+  },
+  "test": {
+    "accuracy": 0.5833194882870909,
+    "balanced_acc": 0.4634701496251028,
+    "f1_macro": 0.47980052717719096,
+    "log_loss": 0.8048069618356278,
+    "roc_auc_ovr": 0.7120672604461031
+  },
+  "test_ci95": {
+    "accuracy": [
+      0.5741339923575345,
+      0.5920107160657917
+    ],
+    "log_loss": [
+      0.7963378485803306,
+      0.815650461634209
+    ],
+    "f1_macro": [
+      0.466317268994605,
+      0.49268583160059704
+    ]
+  },
+  "ece": {
+    "black": 0.010659540553423677,
+    "draw": 0.006722475703066441,
+    "white": 0.011824377644287148
+  },
+  "baseline_rule_accuracy": 0.5259179265658748,
+  "baseline_majority_accuracy": 0.4813,
+  "baseline_elo_logreg": {
+    "accuracy": 0.5276,
+    "balanced_acc": 0.3751,
+    "f1_macro": 0.3551,
+    "log_loss": 0.8794,
+    "roc_auc_ovr": 0.5402
+  },
+  "per_class": {
+    "black": {
+      "precision": 0.578708088653154,
+      "recall": 0.569113263785395,
+      "f1-score": 0.5738705738705738,
+      "support": 5368.0
+    },
+    "draw": {
+      "precision": 0.4828767123287671,
+      "recall": 0.16095890410958905,
+      "f1-score": 0.24143835616438356,
+      "support": 876.0
+    },
+    "white": {
+      "precision": 0.5916189887119221,
+      "recall": 0.6603382809803244,
+      "f1-score": 0.6240926514966153,
+      "support": 5794.0
+    },
+    "accuracy": 0.5833194882870909,
+    "macro avg": {
+      "precision": 0.5510679298979477,
+      "recall": 0.4634701496251028,
+      "f1-score": 0.47980052717719096,
+      "support": 12038.0
+    },
+    "weighted avg": {
+      "precision": 0.5779486160896335,
+      "recall": 0.5833194882870909,
+      "f1-score": 0.5738519740246412,
+      "support": 12038.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      3055,
+      74,
+      2239
+    ],
+    [
+      333,
+      141,
+      402
+    ],
+    [
+      1891,
+      77,
+      3826
+    ]
+  ],
+  "accuracy_by_year": {
+    "2025": 0.583,
+    "2026": 0.584
+  },
+  "mcnemar_p_vs_rule": 1.783183884029231e-31,
+  "mcnemar_p_vs_elo_logreg": 1.1217848688387793e-29,
+  "ablation_nested": [
+    {
+      "step": "rating",
+      "log_loss": 0.8085,
+      "accuracy": 0.5764
+    },
+    {
+      "step": "+context",
+      "log_loss": 0.8022,
+      "accuracy": 0.5809
+    },
+    {
+      "step": "+opening",
+      "log_loss": 0.8016,
+      "accuracy": 0.5788
+    },
+    {
+      "step": "+board_basic",
+      "log_loss": 0.7933,
+      "accuracy": 0.5892
+    },
+    {
+      "step": "+board_extra",
+      "log_loss": 0.7912,
+      "accuracy": 0.5919
+    },
+    {
+      "step": "+clock",
+      "log_loss": 0.7849,
+      "accuracy": 0.6033
+    },
+    {
+      "step": "+engine",
+      "log_loss": 0.7741,
+      "accuracy": 0.6177
+    },
+    {
+      "step": "+history",
+      "log_loss": 0.7746,
+      "accuracy": 0.617
+    }
+  ],
+  "group_importance": {
+    "opening": -8.253716096007224e-05,
+    "board_basic": 0.001811135496072014,
+    "board_extra": 0.0021488128491388815,
+    "history": 0.0027864345835894033,
+    "clock": 0.021582074079653048,
+    "context": 0.035371301572862814,
+    "engine": 0.03949681215063481,
+    "rating": 0.050743878760102334
+  },
+  "stats": {
+    "white_share_decisive_lichess": 0.5169475140175797,
+    "binomial_p_lichess": 1.5499700061437087e-18,
+    "white_share_decisive_otb": 0.551850288448009,
+    "binomial_p_otb": 2.3697889009757788e-18,
+    "white_share_decisive_all": 0.520284084795007,
+    "binomial_p_all": 1.9787063424029014e-28,
+    "source_chi2_p": 0.0,
+    "source_cramers_v": 0.3008129870966346,
+    "pb_r_elo_diff": 0.28300416997957883,
+    "pb_r_eval_cp": 0.2250391168043746,
+    "pb_r_mat_diff": 0.11761038241481281,
+    "pb_r_mob_diff": 0.06198504432052793,
+    "pb_r_clock_frac_diff": 0.019927373864697215,
+    "pb_r_hist_score_diff": 0.21657732214770875,
+    "pb_r_space_diff": 0.058267800840578324
+  },
+  "feature_groups": {
+    "rating": [
+      "elo_diff",
+      "avg_elo"
+    ],
+    "context": [
+      "w_title_rank",
+      "b_title_rank",
+      "title_rank_diff",
+      "is_event_game",
+      "base_minutes",
+      "has_clock",
+      "has_eval",
+      "has_acpl"
+    ],
+    "opening": [],
+    "board_basic": [
+      "mat_diff",
+      "total_material",
+      "w_developed",
+      "b_developed",
+      "w_castled",
+      "b_castled",
+      "center_diff",
+      "mob_diff",
+      "queens_off"
+    ],
+    "board_extra": [
+      "w_doubled",
+      "b_doubled",
+      "w_isolated",
+      "b_isolated",
+      "pawn_islands_diff",
+      "w_king_shield",
+      "b_king_shield",
+      "w_king_attackers",
+      "b_king_attackers",
+      "w_bishop_pair",
+      "b_bishop_pair",
+      "rooks_open_diff",
+      "space_diff",
+      "w_hanging",
+      "b_hanging",
+      "w_pawns_advanced",
+      "b_pawns_advanced",
+      "n_captures",
+      "n_checks",
+      "w_king_moved_uncastled",
+      "b_king_moved_uncastled"
+    ],
+    "clock": [
+      "w_clock_frac_left",
+      "b_clock_frac_left",
+      "clock_frac_diff",
+      "w_max_think_frac",
+      "b_max_think_frac",
+      "w_time_trouble",
+      "b_time_trouble"
+    ],
+    "engine": [
+      "eval_cp",
+      "eval_abs",
+      "w_acpl",
+      "b_acpl",
+      "w_blunders",
+      "b_blunders"
+    ],
+    "history": [
+      "w_hist_games",
+      "b_hist_games",
+      "hist_games_diff",
+      "w_hist_score",
+      "b_hist_score",
+      "hist_score_diff",
+      "w_hist_colour_score",
+      "b_hist_colour_score",
+      "w_hist_draw_rate",
+      "b_hist_draw_rate",
+      "w_rating_trend",
+      "b_rating_trend",
+      "w_eco_familiarity",
+      "b_eco_familiarity",
+      "w_days_since_last",
+      "b_days_since_last",
+      "h2h_games",
+      "h2h_score"
+    ]
+  },
+  "n_features": 74,
+  "sklearn": "1.6.1",
+  "xgboost": "3.4.1",
+  "python": "3.13.18"
+}

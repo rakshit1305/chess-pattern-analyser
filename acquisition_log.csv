@@ -1,0 +1,70 @@
+source,file,rows,sec
+lichess,2013-01,2500,37.7
+lichess,2013-07,2500,30.8
+lichess,2014-01,2500,28.2
+lichess,2014-07,2500,21.1
+lichess,2015-01,2500,24.1
+lichess,2015-07,2500,21.7
+lichess,2016-01,2500,26.7
+lichess,2016-07,2500,25.1
+lichess,2017-01,2500,26.4
+lichess,2017-07,2500,23.6
+lichess,2018-01,2500,17.4
+lichess,2018-07,2500,17.2
+lichess,2019-01,2500,20.6
+lichess,2019-07,2500,17.3
+lichess,2020-01,2500,17.1
+lichess,2020-07,2500,19.2
+lichess,2021-01,2500,17.1
+lichess,2021-07,2500,17.9
+lichess,2022-01,2500,17.6
+lichess,2022-07,2500,17.9
+lichess,2023-01,2500,17.8
+lichess,2023-07,2500,16.9
+lichess,2024-01,2500,18.8
+lichess,2024-07,2500,17.2
+lichess,2025-01,2500,17.4
+lichess,2025-07,2500,17.7
+lichess,2026-01,2500,18.0
+lichess,2026-07,2500,17.6
+lichess_broadcast,The German Bundesliga 2019/2020,400,
+lichess_broadcast,FIDE Chess.com Women's Grand Swiss 2021,275,
+lichess_broadcast,FIDE Chess.com Grand Swiss 2021,400,
+lichess_broadcast,4th FIDE World Championship for People with Disabilities,0,
+lichess_broadcast,FIDE World Rapid Championship 2021,367,
+lichess_broadcast,FIDE Women's World Rapid Championship 2021,389,
+lichess_broadcast,FIDE Women's World Blitz Championship 2021,398,
+lichess_broadcast,FIDE World Blitz Championship 2021 (Upper Boards),396,
+lichess_broadcast,FIDE Women's Candidates Tournament - Pool B,15,
+lichess_broadcast,2022 Tata Steel India (Blitz),0,
+lichess_broadcast,2022 FIDE World Rapid Championship,397,
+lichess_broadcast,2022 FIDE Women's World Rapid Championship,400,
+lichess_broadcast,2022 FIDE World Blitz Championship | Boards 1-40,400,
+lichess_broadcast,2022 FIDE World Blitz Championship | Boards 41+,400,
+lichess_broadcast,2022 FIDE Women's World Blitz Championship,400,
+lichess_broadcast,Austrian Bundesliga 2023-2024,366,
+lichess_broadcast,2023 London Chess Classic,45,
+lichess_broadcast,2023 FIDE Women's World Rapid Championship,400,
+lichess_broadcast,2023 FIDE World Rapid Championship,399,
+lichess_broadcast,2023 FIDE World Blitz Championship | Boards 30+,399,
+lichess_broadcast,2023 FIDE World Blitz Championship | Boards 1-30,394,
+lichess_broadcast,2023 FIDE Women's World Blitz Championship,399,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Rapid Women,400,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Blitz Open 1-30,383,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Blitz Open 31+,399,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Blitz Women,400,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Blitz Open Knockout,29,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2024 | Blitz Women Knockout,30,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Rapid Women,400,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Blitz Open 31+,399,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Blitz Women,400,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Blitz Open 1-30,396,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Blitz Open Knockout,11,
+lichess_broadcast,FIDE World Rapid & Blitz Championships 2025 | Blitz Women Knockout,11,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Group Stage | A,30,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Group Stage | D,30,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Group Stage | C,30,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Group Stage | B,30,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Semifinals,169,
+lichess_broadcast,Total Chess World Championship Tour Pilot 2026 | Finals,169,
+local,local_pgn,0,

@@ -1,0 +1,7 @@
+,accuracy,balanced_acc,f1_macro,log_loss,roc_auc_ovr
+XGBoost (tuned),0.5833,0.4635,0.4798,0.8048,0.7121
+Logistic Regression,0.5683,0.4435,0.4574,0.8156,0.6992
+Elo + source (LogReg),0.5292,0.3945,0.3937,0.8393,0.6569
+Baseline: Elo only (LogReg),0.5276,0.3751,0.3551,0.8794,0.5402
+Baseline: higher Elo wins (rule),0.5259,0.3779,0.3636,,
+Baseline: majority class,0.4813,0.3333,0.2166,0.9032,0.5
